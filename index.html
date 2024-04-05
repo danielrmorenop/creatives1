@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Title -->
+    <title>300x250</title>
+
+    <!--META TAG-->
+    <meta name="ad.size" content="width=300,height=250">
+
+    <!--CUSTOM STYLE-->
+    <link rel="stylesheet" href="css/style.css">
+<body onload="myFunc()">
+
+<div id="banner">
+    
+    <img src="assets/bg1.jpg" id="f1_bg">
+
+    <img src="assets/line.png" class="line">
+    <img src="assets/t1.png" class="t1">
+    <img src="assets/t2.png" class="t2">
+
+    <img src="assets/g1.png" class="g1">
+    <img src="assets/g2.png" class="g2">
+    <img src="assets/g3.png" class="g3">
+    <img src="assets/g4.png" class="g4">
+    <img src="assets/g5.png" class="g5">
+    <img src="assets/g6.png" class="g6">
+    <img src="assets/g7.png" class="g7">
+    <img src="assets/product.png" class="product">
+
+    <img src="assets/logo.png" id="logo">
+    <img src="assets/cta.png" class="cta">
+
+
+    
+
+</div><!--END OF /. BANNER-->
+
+<!--CUSTOM SCRIPT-->
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.20.0_d360d9a082ccc13b1a1a9b153f86b378_min.js"></script>
+
+<script>
+    var t1 = new TimelineMax({repeat: 2, repeatDelay: 3});    
+    var t2 = new TimelineMax({});
+
+
+  
+    function myFunc() 
+    {
+        t1
+            .to('img', 0, {display: 'block'})
+            .add('f1')
+            .from('.product',.6, {x:-80, opacity:0,  ease: Power2.easeOut},'f1')
+            .from('.t1',.6, {y:-30, opacity:0,  ease: Power2.easeOut},'f1')
+
+            .from('.line', .5, {opacity:0, ease: Power2.easeOut},'f1+=.4')
+           
+            .from('.t2',.5, {y:-5, opacity:0,  ease: Power2.easeOut})
+            
+            .from('.g1', 9, { x:10,y: -40,opacity:1, ease: Power2.easeOut},'f1')
+            .from('.g2', 8, { y: 60,opacity:1, ease: Power2.easeOut},'f1')
+
+            .from('.g3', 8, { x:10,y: 50,opacity:1, ease: Power2.easeOut},'f1')
+            .from('.g4', 9, { y: 30,opacity:1, ease: Power2.easeOut},'f1')
+            .from('.g5', 7, { x:20,y: 40,opacity:1, ease: Power2.easeOut},'f1')
+            .from('.g6', 9, {  x:-20,y: 20,opacity:1, ease: Power2.easeOut},'f1')
+            .from('.g7', 8, { x:10,y: 20,opacity:1, ease: Power2.easeOut},'f1')
+           
+ 
+            .from('.cta',.5,{scale:0,opacity:0, ease:Power2.easeOut}, '-=7.5')
+        
+            .to('.cta',.5,{scale:.8,opacity:1, ease:Power2.easeOut}, '-=4.5')
+            .to('.cta',.5,{scale:1,opacity:1, ease:Power2.easeOut}, '-=4')
+            .to('.cta',.5,{scale:.8,opacity:1, ease:Power2.easeOut}, '-=1.5')
+            .to('.cta',.5,{scale:1,opacity:1, ease:Power2.easeOut}, '-=1')
+            .to('.cta',.5,{scale:.8,opacity:1, ease:Power2.easeOut,delay:1.5})
+            .to('.cta',.5,{scale:1,opacity:1, ease:Power2.easeOut})
+            .to('.cta',.5,{scale:.8,opacity:1, ease:Power2.easeOut,delay:1.5})
+            .to('.cta',.5,{scale:1,opacity:1, ease:Power2.easeOut})
+          
+
+
+    }
+</script>
+<!-- DCM Code -->
+<script type="text/javascript">
+    var clickTag= "https://illuminati-glass.com/products/bak8d-master-blend-delta-9-3000mg-gummies-10-pack-display?_pos=15&_sid=69581cf91&_ss=r&utm_source=tfc&utm_medium=display&utm_campaign=retargeting.bak8delta9";
+    var banner = document.getElementById("banner");
+    banner.style.cursor = "pointer";
+
+    banner.addEventListener("click", goURL);
+
+
+    function goURL() {
+        window.open(clickTag);
+    }
+</script>
+</body>
+</html>
+
